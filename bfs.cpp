@@ -4,7 +4,7 @@ using namespace std;
 
 vector<int> adj[6];
 bool visited[6];
-//int distance[6];
+//vector<int> distance;
 queue<int> q;
 
 void bfs(int x) {
@@ -26,6 +26,7 @@ void bfs(int x) {
 void initialize() {
     for(int i = 0; i < 6; i++) {
         visited[i] = false;
+        distance.push_back(0);
     } 
 }
 
