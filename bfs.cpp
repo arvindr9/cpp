@@ -4,20 +4,20 @@ using namespace std;
 
 vector<int> adj[6];
 bool visited[6];
-int* distance[6];
+//int distance[6];
 queue<int> q;
 
 void bfs(int x) {
     visited[x] = true;
-    distance[x] = 0;
+    //distance[x] = 0;
     q.push(x);
     while(!q.empty()) {
-        int s = queue.front(); queue.pop();
-        cout << "s" << " ";
+        int s = q.front(); q.pop();
+        cout << s << " ";
         for(auto u: adj[s]) {
             if(visited[u]) continue;
             visited[u] = true;
-            distance[u] = distance[s] + 1;
+            //distance[u] = distance[s] + 1;
             q.push(u);
         } 
     }
