@@ -8,7 +8,7 @@ void dfs(int u, int rainbowDown[], vector<pair<int,int>> adj[]) {
             rainbowDown[u] = 0;
             break;
         }
-        dfs(v, rainbowDown, *adj);
+        dfs(v, rainbowDown, adj);
         for(auto w: v.first) {
             if(v.second == w.second) {
                 rainbowDown[u] = 0;
@@ -40,6 +40,6 @@ int main() {
         if(count == 1) rainbowDown[i] = 1;
     }
     int root = 1;
-    dfs(0, rainbowDown, adj)
+    dfs(0, rainbowDown, adj);
     
 }
