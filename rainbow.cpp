@@ -40,6 +40,6 @@ int main() {
         if(count == 1) rainbowDown[i] = 1;
     }
     int root = 1;
-    dfs(0, rainbowDown, adj);
+    dfs(1, rainbowDown, adj);
     
 }
